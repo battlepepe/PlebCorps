@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  plebcorpswebapp:
+    image: ${DOCKER_REGISTRY-}plebcorpswebapp
+    build:
+      context: .\PlebCorpsWebApp
+      dockerfile: Dockerfile
